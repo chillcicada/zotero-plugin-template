@@ -8,7 +8,8 @@
     ":enableVulnerabilityAlerts",
     ":dependencyDashboard",
     "group:allNonMajor",
-    "schedule:weekly"
+    "schedule:weekly",
+    "github>chillcicada/renovate-config"
   ],
   "labels": ["dependencies"],
   "packageRules": [
