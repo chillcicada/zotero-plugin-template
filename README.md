@@ -61,7 +61,7 @@ If you are using this repo, I recommended that you put the following badge on yo
   - Full type definition support for the whole Zotero project, which is written in JavaScript (using [zotero-types](https://github.com/windingwind/zotero-types));
   - Global variables and environment setup;
 - Plugin develop/build/release workflow:
-  - Automatically generate/update plugin id/version, update configrations, and set environment variables (`development` / `production`);
+  - Automatically generate/update plugin id/version, update configurations, and set environment variables (`development` / `production`);
   - Automatically build and reload code in Zotero;
   - Automatically release to GitHub;
 - Prettier and ES Lint integration.
@@ -157,34 +157,34 @@ Activate with `Shift+P`.
 
 3. Enter the repo folder
 
-### 2 Config Template Settings and Enviroment
+### 2 Config Template Settings and Environment
 
 1. Modify the settings in `./package.json`, including:
 
    ```json5
    {
-     version: "", // to 0.0.0
-     author: "",
-     description: "",
-     homepage: "",
-     config: {
-       addonName: "", // name to be displayed in the plugin manager
-       addonID: "", // ID to avoid conflict. IMPORTANT!
-       addonRef: "", // e.g. Element ID prefix
-       addonInstance: "", // the plugin's root instance: Zotero.${addonInstance}
-       prefsPrefix: "extensions.zotero.${addonRef}", // the prefix of prefs
-     },
+     "version": "", // to 0.0.0
+     "author": "",
+     "description": "",
+     "homepage": "",
+     "config": {
+       "addonName": "", // name to be displayed in the plugin manager
+       "addonID": "", // ID to avoid conflict. IMPORTANT!
+       "addonRef": "", // e.g. Element ID prefix
+       "addonInstance": "", // the plugin's root instance: Zotero.${addonInstance}
+       "prefsPrefix": "extensions.zotero.${addonRef}" // the prefix of prefs
+     }
    }
    ```
 
    > [!warning]
    > Be careful to set the addonID and addonRef to avoid conflict.
 
-   If you need to host your XPI packages outside of GitHub, moidify `updateURL` and add `xpiDownloadLink` in `zotero-plugin.config.ts`.
+   If you need to host your XPI packages outside of GitHub, modify `updateURL` and add `xpiDownloadLink` in `zotero-plugin.config.ts`.
 
 2. Copy the environment variable file. Modify the commands that starts your installation of the beta Zotero.
 
-   > Create a development profile (Optional)  
+   > Create a development profile (Optional)
    > Start the beta Zotero with `/path/to/zotero -p`. Create a new profile and use it as your development profile. Do this only once
 
    ```sh
@@ -303,7 +303,7 @@ The bootstrapped plugin runs in a sandbox, which does not have default global va
 
 This template registers the following variables to the global scope:
 
-```ts
+```txt
 Zotero, ZoteroPane, Zotero_Tabs, window, document, rootURI, ztoolkit, addon;
 ```
 
@@ -315,9 +315,9 @@ The plugin template provides new APIs for bootstrap plugins. We have two reasons
 - Zotero 7 requires createElement()/createElementNS() → createXULElement() for remaining XUL elements, while Zotero 6 doesn't support `createXULElement`. The React.createElement-like API `createElement` detects namespace(xul/html/svg) and creates elements automatically, with the return element in the corresponding TS element type.
 
 ```ts
-createElement(document, "div"); // returns HTMLDivElement
-createElement(document, "hbox"); // returns XUL.Box
-createElement(document, "button", { namespace: "xul" }); // manually set namespace. returns XUL.Button
+createElement(document, 'div') // returns HTMLDivElement
+createElement(document, 'hbox') // returns XUL.Box
+createElement(document, 'button', { namespace: 'xul' }) // manually set namespace. returns XUL.Button
 ```
 
 ### About Zotero API

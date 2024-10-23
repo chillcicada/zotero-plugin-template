@@ -1,6 +1,7 @@
 {
-  "name": "zotero-plugin-template",
-  "version": "2.0.2-beta.3",
+  "name": "@chillcicada/zotero-plugin-template",
+  "type": "module",
+  "version": "0.1.0",
   "description": "Zotero Plugin Template",
   "config": {
     "addonName": "Zotero Plugin Template",
@@ -9,50 +10,44 @@
     "addonInstance": "AddonTemplate",
     "prefsPrefix": "extensions.zotero.addontemplate"
   },
+  "author": "chillcicada",
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/chillcicada/zotero-plugin-template#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windingwind/zotero-plugin-template.git"
+    "url": "git+https://github.com/chillcicada/zotero-plugin-template.git"
   },
-  "author": "windingwind",
   "bugs": {
-    "url": "https://github.com/windingwind/zotero-plugin-template/issues"
+    "url": "https://github.com/chillcicada/zotero-plugin-template/issues"
   },
-  "homepage": "https://github.com/windingwind/zotero-plugin-template#readme",
-  "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",
     "build": "tsc --noEmit && zotero-plugin build",
-    "lint": "prettier --write . && eslint . --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "release": "zotero-plugin release",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "update-deps": "npm update --save"
+    "postinstall": "simple-git-hooks"
   },
   "dependencies": {
-    "zotero-plugin-toolkit": "^3.0.0"
+    "zotero-plugin-toolkit": "3.0.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.1",
-    "@types/node": "^22.5.0",
-    "eslint": "^9.9.1",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.3.0",
-    "zotero-plugin-scaffold": "^0.1.0",
-    "zotero-types": "^2.1.1"
+    "@antfu/eslint-config": "3.5.1",
+    "@eslint/js": "9.10.0",
+    "@types/node": "22.5.4",
+    "eslint": "9.10.0",
+    "eslint-plugin-format": "0.1.2",
+    "lint-staged": "15.2.10",
+    "oxlint": "0.9.3",
+    "simple-git-hooks": "2.11.1",
+    "typescript": "5.6.2",
+    "zotero-plugin-scaffold": "0.1.2",
+    "zotero-types": "2.1.1"
   },
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 2,
-    "endOfLine": "lf",
-    "overrides": [
-      {
-        "files": [
-          "*.xhtml"
-        ],
-        "options": {
-          "htmlWhitespaceSensitivity": "css"
-        }
-      }
-    ]
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

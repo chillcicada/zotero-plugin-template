@@ -12,15 +12,16 @@ export function waitUntil(
   interval = 100,
   timeout = 10000,
 ) {
-  const start = Date.now();
-  const intervalId = ztoolkit.getGlobal("setInterval")(() => {
+  const start = Date.now()
+  const intervalId = ztoolkit.getGlobal('setInterval')(() => {
     if (condition()) {
-      ztoolkit.getGlobal("clearInterval")(intervalId);
-      callback();
-    } else if (Date.now() - start > timeout) {
-      ztoolkit.getGlobal("clearInterval")(intervalId);
+      ztoolkit.getGlobal('clearInterval')(intervalId)
+      callback()
     }
-  }, interval);
+    else if (Date.now() - start > timeout) {
+      ztoolkit.getGlobal('clearInterval')(intervalId)
+    }
+  }, interval)
 }
 
 /**
@@ -35,15 +36,17 @@ export function waitUtilAsync(
   timeout = 10000,
 ) {
   return new Promise<void>((resolve, reject) => {
-    const start = Date.now();
-    const intervalId = ztoolkit.getGlobal("setInterval")(() => {
+    const start = Date.now()
+    const intervalId = ztoolkit.getGlobal('setInterval')(() => {
       if (condition()) {
-        ztoolkit.getGlobal("clearInterval")(intervalId);
-        resolve();
-      } else if (Date.now() - start > timeout) {
-        ztoolkit.getGlobal("clearInterval")(intervalId);
-        reject();
+        ztoolkit.getGlobal('clearInterval')(intervalId)
+        resolve()
       }
-    }, interval);
-  });
+      else if (Date.now() - start > timeout) {
+        ztoolkit.getGlobal('clearInterval')(intervalId)
+        // eslint-disable-next-line prefer-promise-reject-errors
+        reject()
+      }
+    }, interval)
+  })
 }

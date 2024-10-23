@@ -1,106 +1,106 @@
+/* eslint-disable unused-imports/no-unused-vars */
+import { config } from '../package.json'
 import {
   BasicExampleFactory,
   HelperExampleFactory,
   KeyExampleFactory,
   PromptExampleFactory,
   UIExampleFactory,
-} from "./modules/examples";
-import { config } from "../package.json";
-import { getString, initLocale } from "./utils/locale";
-import { registerPrefsScripts } from "./modules/preferenceScript";
-import { createZToolkit } from "./utils/ztoolkit";
+} from './modules/examples'
+import { registerPrefsScripts } from './modules/preferenceScript'
+import { getString, initLocale } from './utils/locale'
+import { createZToolkit } from './utils/ztoolkit'
 
 async function onStartup() {
   await Promise.all([
     Zotero.initializationPromise,
     Zotero.unlockPromise,
     Zotero.uiReadyPromise,
-  ]);
+  ])
 
-  initLocale();
+  initLocale()
 
-  BasicExampleFactory.registerPrefs();
+  BasicExampleFactory.registerPrefs()
 
-  BasicExampleFactory.registerNotifier();
+  BasicExampleFactory.registerNotifier()
 
-  KeyExampleFactory.registerShortcuts();
+  KeyExampleFactory.registerShortcuts()
 
-  await UIExampleFactory.registerExtraColumn();
+  await UIExampleFactory.registerExtraColumn()
 
-  await UIExampleFactory.registerExtraColumnWithCustomCell();
+  await UIExampleFactory.registerExtraColumnWithCustomCell()
 
-  UIExampleFactory.registerItemPaneSection();
+  UIExampleFactory.registerItemPaneSection()
 
-  UIExampleFactory.registerReaderItemPaneSection();
+  UIExampleFactory.registerReaderItemPaneSection()
 
-  await onMainWindowLoad(window);
+  await onMainWindowLoad(window)
 }
 
 async function onMainWindowLoad(win: Window): Promise<void> {
   // Create ztoolkit for every window
-  addon.data.ztoolkit = createZToolkit();
+  addon.data.ztoolkit = createZToolkit()
 
-  // @ts-ignore This is a moz feature
-  window.MozXULElement.insertFTLIfNeeded(`${config.addonRef}-mainWindow.ftl`);
+  window.MozXULElement.insertFTLIfNeeded(`${config.addonRef}-mainWindow.ftl`)
 
   const popupWin = new ztoolkit.ProgressWindow(config.addonName, {
     closeOnClick: true,
     closeTime: -1,
   })
     .createLine({
-      text: getString("startup-begin"),
-      type: "default",
+      text: getString('startup-begin'),
+      type: 'default',
       progress: 0,
     })
-    .show();
+    .show()
 
-  await Zotero.Promise.delay(1000);
+  await Zotero.Promise.delay(1000)
   popupWin.changeLine({
     progress: 30,
-    text: `[30%] ${getString("startup-begin")}`,
-  });
+    text: `[30%] ${getString('startup-begin')}`,
+  })
 
-  UIExampleFactory.registerStyleSheet();
+  UIExampleFactory.registerStyleSheet()
 
-  UIExampleFactory.registerRightClickMenuItem();
+  UIExampleFactory.registerRightClickMenuItem()
 
-  UIExampleFactory.registerRightClickMenuPopup();
+  UIExampleFactory.registerRightClickMenuPopup()
 
-  UIExampleFactory.registerWindowMenuWithSeparator();
+  UIExampleFactory.registerWindowMenuWithSeparator()
 
-  PromptExampleFactory.registerNormalCommandExample();
+  PromptExampleFactory.registerNormalCommandExample()
 
-  PromptExampleFactory.registerAnonymousCommandExample();
+  PromptExampleFactory.registerAnonymousCommandExample()
 
-  PromptExampleFactory.registerConditionalCommandExample();
+  PromptExampleFactory.registerConditionalCommandExample()
 
-  await Zotero.Promise.delay(1000);
+  await Zotero.Promise.delay(1000)
 
   popupWin.changeLine({
     progress: 100,
-    text: `[100%] ${getString("startup-finish")}`,
-  });
-  popupWin.startCloseTimer(5000);
+    text: `[100%] ${getString('startup-finish')}`,
+  })
+  popupWin.startCloseTimer(5000)
 
-  addon.hooks.onDialogEvents("dialogExample");
+  addon.hooks.onDialogEvents('dialogExample')
 }
 
 async function onMainWindowUnload(win: Window): Promise<void> {
-  ztoolkit.unregisterAll();
-  addon.data.dialog?.window?.close();
+  ztoolkit.unregisterAll()
+  addon.data.dialog?.window?.close()
 }
 
 function onShutdown(): void {
-  ztoolkit.unregisterAll();
-  addon.data.dialog?.window?.close();
+  ztoolkit.unregisterAll()
+  addon.data.dialog?.window?.close()
   // Remove addon object
-  addon.data.alive = false;
-  delete Zotero[config.addonInstance];
+  addon.data.alive = false
+  delete Zotero[config.addonInstance]
 }
 
 /**
  * This function is just an example of dispatcher for Notify events.
- * Any operations should be placed in a function to keep this funcion clear.
+ * Any operations should be placed in a function to keep this function clear.
  */
 async function onNotify(
   event: string,
@@ -109,15 +109,16 @@ async function onNotify(
   extraData: { [key: string]: any },
 ) {
   // You can add your code to the corresponding notify type
-  ztoolkit.log("notify", event, type, ids, extraData);
+  ztoolkit.log('notify', event, type, ids, extraData)
   if (
-    event == "select" &&
-    type == "tab" &&
-    extraData[ids[0]].type == "reader"
+    event === 'select'
+    && type === 'tab'
+    && extraData[ids[0]].type === 'reader'
   ) {
-    BasicExampleFactory.exampleNotifierCallback();
-  } else {
-    return;
+    BasicExampleFactory.exampleNotifierCallback()
+  }
+  else {
+    // add your code
   }
 }
 
@@ -129,46 +130,45 @@ async function onNotify(
  */
 async function onPrefsEvent(type: string, data: { [key: string]: any }) {
   switch (type) {
-    case "load":
-      registerPrefsScripts(data.window);
-      break;
+    case 'load':
+      registerPrefsScripts(data.window)
+      break
     default:
-      return;
   }
 }
 
 function onShortcuts(type: string) {
   switch (type) {
-    case "larger":
-      KeyExampleFactory.exampleShortcutLargerCallback();
-      break;
-    case "smaller":
-      KeyExampleFactory.exampleShortcutSmallerCallback();
-      break;
+    case 'larger':
+      KeyExampleFactory.exampleShortcutLargerCallback()
+      break
+    case 'smaller':
+      KeyExampleFactory.exampleShortcutSmallerCallback()
+      break
     default:
-      break;
+      break
   }
 }
 
 function onDialogEvents(type: string) {
   switch (type) {
-    case "dialogExample":
-      HelperExampleFactory.dialogExample();
-      break;
-    case "clipboardExample":
-      HelperExampleFactory.clipboardExample();
-      break;
-    case "filePickerExample":
-      HelperExampleFactory.filePickerExample();
-      break;
-    case "progressWindowExample":
-      HelperExampleFactory.progressWindowExample();
-      break;
-    case "vtableExample":
-      HelperExampleFactory.vtableExample();
-      break;
+    case 'dialogExample':
+      HelperExampleFactory.dialogExample()
+      break
+    case 'clipboardExample':
+      HelperExampleFactory.clipboardExample()
+      break
+    case 'filePickerExample':
+      HelperExampleFactory.filePickerExample()
+      break
+    case 'progressWindowExample':
+      HelperExampleFactory.progressWindowExample()
+      break
+    case 'vtableExample':
+      HelperExampleFactory.vtableExample()
+      break
     default:
-      break;
+      break
   }
 }
 
@@ -185,4 +185,4 @@ export default {
   onPrefsEvent,
   onShortcuts,
   onDialogEvents,
-};
+}

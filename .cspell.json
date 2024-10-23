@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "node_modules/**",
+    ".*/**"
+  ],
+  "words": [
+    "addontemplate",
+    "antfu",
+    "ERESOLVE",
+    "hbox",
+    "onpaneload",
+    "oxlint",
+    "Prebuild",
+    "prefpane",
+    "prefs",
+    "zotero",
+    "ztoolkit"
+  ]
+}

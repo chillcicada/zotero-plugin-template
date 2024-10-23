@@ -162,17 +162,17 @@ Obsidian风格的指令输入模块，它通过接受文本来运行插件，并
 
    ```json5
    {
-     version: "", // 修改为 0.0.0
-     author: "",
-     description: "",
-     homepage: "",
-     config: {
-       addonName: "", // 插件名称
-       addonID: "", // 插件 ID 【重要：防止冲突】
-       addonRef: "", // 插件命名空间：元素前缀等
-       addonInstance: "", // 注册在 Zotero 根下的实例名
-       prefsPrefix: "extensions.zotero.${addonRef}", // 首选项的前缀
-     },
+     "version": "", // 修改为 0.0.0
+     "author": "",
+     "description": "",
+     "homepage": "",
+     "config": {
+       "addonName": "", // 插件名称
+       "addonID": "", // 插件 ID 【重要：防止冲突】
+       "addonRef": "", // 插件命名空间：元素前缀等
+       "addonInstance": "", // 注册在 Zotero 根下的实例名
+       "prefsPrefix": "extensions.zotero.${addonRef}" // 首选项的前缀
+     }
    }
    ```
 
@@ -307,8 +307,8 @@ bootstrap插件在沙盒中运行，但沙盒中没有默认的全局变量，�
 
 此模板将以下变量注册到全局范围:
 
-```ts
-Zotero, ZoteroPane, Zotero_Tabs, window, document, rootURI, ztoolkit, addon;
+```txt
+Zotero, ZoteroPane, Zotero_Tabs, window, document, rootURI, ztoolkit, addon
 ```
 
 ### 创建元素 API(Create Elements API)
@@ -319,9 +319,9 @@ Zotero, ZoteroPane, Zotero_Tabs, window, document, rootURI, ztoolkit, addon;
 - Zotero 7 需要 createElement()/createElementNS() → createXULElement() 来表示其他的 XUL 元素，而 Zotero 6 并不支持 `createXULElement`. 类似于 React.createElement 的API `createElement` 检测 namespace(xul/html/svg) 并且自动创建元素，返回元素为对应的 TypeScript 元素类型.
 
 ```ts
-createElement(document, "div"); // returns HTMLDivElement
-createElement(document, "hbox"); // returns XUL.Box
-createElement(document, "button", { namespace: "xul" }); // manually set namespace. returns XUL.Button
+createElement(document, 'div') // returns HTMLDivElement
+createElement(document, 'hbox') // returns XUL.Box
+createElement(document, 'button', { namespace: 'xul' }) // manually set namespace. returns XUL.Button
 ```
 
 ### 关于 Zotero API(About Zotero API)
