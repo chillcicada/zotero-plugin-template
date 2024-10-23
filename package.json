@@ -29,7 +29,7 @@
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {
-    "zotero-plugin-toolkit": "3.0.2"
+    "zotero-plugin-toolkit": "4.0.7"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.5.1",
