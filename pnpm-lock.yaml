@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       zotero-plugin-toolkit:
-        specifier: 3.0.2
-        version: 3.0.2
+        specifier: 4.0.7
+        version: 4.0.7
     devDependencies:
       '@antfu/eslint-config':
         specifier: 3.5.1
@@ -1725,6 +1725,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   eslint@9.10.0:
@@ -3821,11 +3822,15 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  zotero-plugin-toolkit@3.0.2:
-    resolution: {integrity: sha512-99WKlyBRt1bMj+4w7ZY6mMsrHJiuTfOtM9ev2U2qUb8qK8x4/050H7jq7dR0B53udPY95G3IIwXn18LQdylGnw==}
+  zotero-plugin-toolkit@4.0.7:
+    resolution: {integrity: sha512-9bAXXJTgH5SkyauGft50EerudZYGYzN/T3kPgi7udB8lScVyO+HkYERxJqnFuvk2gHzV+stqeaKaX9a0ODTxEQ==}
+    engines: {node: '>=18'}
 
   zotero-types@2.1.1:
     resolution: {integrity: sha512-D7iVSorez8Z9R1kHnpPOfSgDKX2lE4DA22CvA4JLkhZoxqqq24qN7TwxsH0elKJKu8XW0MjYU5GmWtP4KGy97Q==}
+
+  zotero-types@2.2.1:
+    resolution: {integrity: sha512-alsjWn7i3pJq7b9+2XT2WbxZtWk4WWH4EIUi6o+Xx7/uz8TQDA0PFY2mS91gL8VXWKXMrSBJKYEbkvMMR6KuKA==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -8091,14 +8096,24 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  zotero-plugin-toolkit@3.0.2:
+  zotero-plugin-toolkit@4.0.7:
     dependencies:
-      zotero-types: 2.1.1
+      zotero-types: 2.2.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
   zotero-types@2.1.1:
+    dependencies:
+      '@types/bluebird': 3.5.42
+      '@types/react': 18.3.1
+      epubjs: 0.3.93
+      pdfjs-dist: 4.6.82
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
+  zotero-types@2.2.1:
     dependencies:
       '@types/bluebird': 3.5.42
       '@types/react': 18.3.1
