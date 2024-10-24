@@ -43,8 +43,8 @@ importers:
         specifier: 0.1.7
         version: 0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0))
       zotero-types:
-        specifier: 2.2.1
-        version: 2.2.1
+        specifier: 3.0.1
+        version: 3.0.1
 
 packages:
 
@@ -3648,6 +3648,9 @@ packages:
   zotero-types@2.2.1:
     resolution: {integrity: sha512-alsjWn7i3pJq7b9+2XT2WbxZtWk4WWH4EIUi6o+Xx7/uz8TQDA0PFY2mS91gL8VXWKXMrSBJKYEbkvMMR6KuKA==}
 
+  zotero-types@3.0.1:
+    resolution: {integrity: sha512-a7MlAykCN/wn41/7iBlTJul1qWavWu1ObGq5HXBGeeDe+fboO/3xjIF+k8O474sYmBgPc11N25xF0vH7q56IvA==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -7025,7 +7028,7 @@ snapshots:
   postcss@8.4.45:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.1.0
+      picocolors: 1.1.1
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
@@ -7785,6 +7788,16 @@ snapshots:
       - supports-color
 
   zotero-types@2.2.1:
+    dependencies:
+      '@types/bluebird': 3.5.42
+      '@types/react': 18.3.1
+      epubjs: 0.3.93
+      pdfjs-dist: 4.6.82
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
+  zotero-types@3.0.1:
     dependencies:
       '@types/bluebird': 3.5.42
       '@types/react': 18.3.1
