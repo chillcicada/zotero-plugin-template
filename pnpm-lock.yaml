@@ -31,8 +31,8 @@ importers:
         specifier: 15.2.10
         version: 15.2.10
       oxlint:
-        specifier: 0.10.2
-        version: 0.10.2
+        specifier: 0.10.3
+        version: 0.10.3
       simple-git-hooks:
         specifier: 2.11.1
         version: 2.11.1
@@ -41,7 +41,7 @@ importers:
         version: 5.6.3
       zotero-plugin-scaffold:
         specifier: 0.1.7
-        version: 0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0))
+        version: 0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0)
       zotero-types:
         specifier: 3.0.1
         version: 3.0.1
@@ -612,43 +612,43 @@ packages:
     resolution: {integrity: sha512-TUkJLtI163Bz5+JK0O+zDkQpn4gKwN+BovclUvCj6pI/6RXrFqQvUMRS2M+Rt8Rv0qR3wjoMoOPmpJKeOh0nBg==}
     engines: {node: '>= 18'}
 
-  '@oxlint/darwin-arm64@0.10.2':
-    resolution: {integrity: sha512-qFUOPUAu5Z8d/RUYTWKS5rekE5R9M4FyfFn2DbQyH8wg/ufLaYKpquzFKeFPvwNs0NU9B7Iro28Ty+YQCdhuxA==}
+  '@oxlint/darwin-arm64@0.10.3':
+    resolution: {integrity: sha512-1zcWSqr9DmhbSrV1SEZRywp81CNq8ZidIcFGB8tGUMnlBNYiHnxyHHh2GIZsr1C2exmkBUGXruM1P8eQ9BWGuQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint/darwin-x64@0.10.2':
-    resolution: {integrity: sha512-v4VzIwCrB4jCkejnj9bjP0o+CjxMF1j6GltQQQQry2ySDFTNV9Etu6mvi6990mhh+bND4f9VyJ/KbRl+RZBPJA==}
+  '@oxlint/darwin-x64@0.10.3':
+    resolution: {integrity: sha512-lPAXCwYb+wZgjWAMhtPjGn7n1h8HvTulj6XCRyIgUu/aTGDRtnsae9IPXsJ9LJwYu5wyzkcWow0nhlIxkDaZ+w==}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint/linux-arm64-gnu@0.10.2':
-    resolution: {integrity: sha512-7ACUw/H3a9EntQ1fK9K0V3Sqk9y2dD0lvNVo9iWtWL76OAJ2RlGuMTNROBMd/5mac79/zXJu4mlzd3cUeDa9mA==}
+  '@oxlint/linux-arm64-gnu@0.10.3':
+    resolution: {integrity: sha512-OmzpNVRwhjuI/RtoG4ROrwxRICTLoBB3ua4/Mh2iC3RelOog2xhlAAJHenKtzgQXNmebWof/0EckFpMfID7fMw==}
     cpu: [arm64]
     os: [linux]
 
-  '@oxlint/linux-arm64-musl@0.10.2':
-    resolution: {integrity: sha512-FmTXpCFIIIxu516bRHbFb3FNKgwj2zIUeSx4Onklnlea9GgZt/QC9DS5hT06psAkjcWrvGV/LxFWs62qzO8xkA==}
+  '@oxlint/linux-arm64-musl@0.10.3':
+    resolution: {integrity: sha512-QQzlIW6rKOoGZK19gz/kbAbIFROJEV6ER0smcoBA7FzwsQ/ji796qx3TdITelgJwJt5x+OG5ZHztIjyzC871ZQ==}
     cpu: [arm64]
     os: [linux]
 
-  '@oxlint/linux-x64-gnu@0.10.2':
-    resolution: {integrity: sha512-NAJYpgivYM7EGqSTekjt6yeuVmqp8KSgaEcAdhRlEryYfoG67I1S39L62lpVwVzleNPMu9CUyBrlz5r+g2SSig==}
+  '@oxlint/linux-x64-gnu@0.10.3':
+    resolution: {integrity: sha512-m4ZUKsQNXxXmHUYBEaO7KN83DPVsLTq8KaRO4qj0Cs1RgD8O3YYCCDewVe8x/9yskQrCCTP4mL0G4IZgDJ3Gpg==}
     cpu: [x64]
     os: [linux]
 
-  '@oxlint/linux-x64-musl@0.10.2':
-    resolution: {integrity: sha512-e4N0m8pz+CeL2tA0jh4pGk3BdMJbVgIEPlbOjQGk8daY10dVCzA1yWdkkzVh1d3aAOHo3c9mOXYq0ZQjyZfn1g==}
+  '@oxlint/linux-x64-musl@0.10.3':
+    resolution: {integrity: sha512-XKvAUYxE9bHjvWE4wmOlIdaVQN7pzZAH3Rx1EFg0MfGBVjyDm+uf0P3so+gx2PowqvBnBneL9tth2AS3Bcjl6g==}
     cpu: [x64]
     os: [linux]
 
-  '@oxlint/win32-arm64@0.10.2':
-    resolution: {integrity: sha512-LusTVOzTjztkEdXjQM8NqazyXE95yknpRl9DUJA8Ak6UXifEXxw9DbUNzrwaVfp/pkk0KAMab76JkPgwfmyavA==}
+  '@oxlint/win32-arm64@0.10.3':
+    resolution: {integrity: sha512-8xhYVvnwrveMHyXAgQAaDjJWFij4mZP6jtMlBIjk6pZSrjUzX+9o7Wh1zgH6kYApmcPDAzomYJLSYvyF5PzluA==}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint/win32-x64@0.10.2':
-    resolution: {integrity: sha512-/f4heyBoG433OT3siQapyQ9LxIsZGHIQOtO/oWSzl9SAHOQ3MLA+8XOozatT+GWyUB9Y6q4RwJuNbxpdzjOkuA==}
+  '@oxlint/win32-x64@0.10.3':
+    resolution: {integrity: sha512-dQiHruLd42aock1WHp5BFvRvaz+Pe436dQkcmlCVmInhmOjRpDEVKPUUWamrImV6S8VM63bn4Jp60vpprjJQdQ==}
     cpu: [x64]
     os: [win32]
 
@@ -849,6 +849,7 @@ packages:
   '@xmldom/xmldom@0.7.13':
     resolution: {integrity: sha512-lm2GW5PkosIzccsaZIz7tp8cPADSIlIHWDFTR1N0SzfinhhYgeIQjFMz4rYzanCScr3DqQLeomUDArp6MWKm+g==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version is no longer supported, please update to at least 0.8.*
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -2739,8 +2740,8 @@ packages:
     resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
     engines: {node: '>=0.10.0'}
 
-  oxlint@0.10.2:
-    resolution: {integrity: sha512-/8AU6/4e5UwcF0UMM4U3azFJ04unWZMR6Q+o6efXZaLz7uk0+3FO+JU8zX8XbMOaLDQs/FnQMhlPGvsH1CUiyA==}
+  oxlint@0.10.3:
+    resolution: {integrity: sha512-af5u5+s4adyszujeILPDRGwix0o5M1+qR1eqxNSmJhTKVRX7xdrT9s2rpNpMYxQmPyWRhC/+5Gqyb+f/PtbK9A==}
     engines: {node: '>=14.*'}
     hasBin: true
 
@@ -3756,12 +3757,11 @@ snapshots:
     dependencies:
       commander: 12.1.0
 
-  '@conventional-changelog/git-client@1.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)':
+  '@conventional-changelog/git-client@1.0.1(conventional-commits-parser@6.0.0)':
     dependencies:
       '@types/semver': 7.5.8
       semver: 7.6.3
     optionalDependencies:
-      conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.0.0
     optional: true
 
@@ -4285,28 +4285,28 @@ snapshots:
       '@octokit/request-error': 6.1.4
       '@octokit/webhooks-methods': 5.1.0
 
-  '@oxlint/darwin-arm64@0.10.2':
+  '@oxlint/darwin-arm64@0.10.3':
     optional: true
 
-  '@oxlint/darwin-x64@0.10.2':
+  '@oxlint/darwin-x64@0.10.3':
     optional: true
 
-  '@oxlint/linux-arm64-gnu@0.10.2':
+  '@oxlint/linux-arm64-gnu@0.10.3':
     optional: true
 
-  '@oxlint/linux-arm64-musl@0.10.2':
+  '@oxlint/linux-arm64-musl@0.10.3':
     optional: true
 
-  '@oxlint/linux-x64-gnu@0.10.2':
+  '@oxlint/linux-x64-gnu@0.10.3':
     optional: true
 
-  '@oxlint/linux-x64-musl@0.10.2':
+  '@oxlint/linux-x64-musl@0.10.3':
     optional: true
 
-  '@oxlint/win32-arm64@0.10.2':
+  '@oxlint/win32-arm64@0.10.3':
     optional: true
 
-  '@oxlint/win32-x64@0.10.2':
+  '@oxlint/win32-x64@0.10.3':
     optional: true
 
   '@pkgjs/parseargs@0.11.0':
@@ -5012,14 +5012,14 @@ snapshots:
       compare-func: 2.0.0
     optional: true
 
-  conventional-changelog-core@8.0.0(conventional-commits-filter@5.0.0):
+  conventional-changelog-core@8.0.0:
     dependencies:
       '@hutson/parse-repository-url': 5.0.0
       add-stream: 1.0.0
       conventional-changelog-writer: 8.0.0
       conventional-commits-parser: 6.0.0
-      git-raw-commits: 5.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
-      git-semver-tags: 8.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
+      git-raw-commits: 5.0.0(conventional-commits-parser@6.0.0)
+      git-semver-tags: 8.0.0(conventional-commits-parser@6.0.0)
       hosted-git-info: 7.0.2
       normalize-package-data: 6.0.2
       read-package-up: 11.0.0
@@ -5057,13 +5057,13 @@ snapshots:
       semver: 7.6.3
     optional: true
 
-  conventional-changelog@6.0.0(conventional-commits-filter@5.0.0):
+  conventional-changelog@6.0.0:
     dependencies:
       conventional-changelog-angular: 8.0.0
       conventional-changelog-atom: 5.0.0
       conventional-changelog-codemirror: 5.0.0
       conventional-changelog-conventionalcommits: 8.0.0
-      conventional-changelog-core: 8.0.0(conventional-commits-filter@5.0.0)
+      conventional-changelog-core: 8.0.0
       conventional-changelog-ember: 5.0.0
       conventional-changelog-eslint: 6.0.0
       conventional-changelog-express: 5.0.0
@@ -5887,18 +5887,18 @@ snapshots:
       pathe: 1.1.2
       tar: 6.2.1
 
-  git-raw-commits@5.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0):
+  git-raw-commits@5.0.0(conventional-commits-parser@6.0.0):
     dependencies:
-      '@conventional-changelog/git-client': 1.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
+      '@conventional-changelog/git-client': 1.0.1(conventional-commits-parser@6.0.0)
       meow: 13.2.0
     transitivePeerDependencies:
       - conventional-commits-filter
       - conventional-commits-parser
     optional: true
 
-  git-semver-tags@8.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0):
+  git-semver-tags@8.0.0(conventional-commits-parser@6.0.0):
     dependencies:
-      '@conventional-changelog/git-client': 1.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
+      '@conventional-changelog/git-client': 1.0.1(conventional-commits-parser@6.0.0)
       meow: 13.2.0
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -6841,16 +6841,16 @@ snapshots:
 
   os-tmpdir@1.0.2: {}
 
-  oxlint@0.10.2:
+  oxlint@0.10.3:
     optionalDependencies:
-      '@oxlint/darwin-arm64': 0.10.2
-      '@oxlint/darwin-x64': 0.10.2
-      '@oxlint/linux-arm64-gnu': 0.10.2
-      '@oxlint/linux-arm64-musl': 0.10.2
-      '@oxlint/linux-x64-gnu': 0.10.2
-      '@oxlint/linux-x64-musl': 0.10.2
-      '@oxlint/win32-arm64': 0.10.2
-      '@oxlint/win32-x64': 0.10.2
+      '@oxlint/darwin-arm64': 0.10.3
+      '@oxlint/darwin-x64': 0.10.3
+      '@oxlint/linux-arm64-gnu': 0.10.3
+      '@oxlint/linux-arm64-musl': 0.10.3
+      '@oxlint/linux-x64-gnu': 0.10.3
+      '@oxlint/linux-x64-musl': 0.10.3
+      '@oxlint/win32-arm64': 0.10.3
+      '@oxlint/win32-x64': 0.10.3
 
   p-defer@1.0.0: {}
 
@@ -7747,7 +7747,7 @@ snapshots:
       async: 3.2.6
       jszip: 3.10.1
 
-  zotero-plugin-scaffold@0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0)):
+  zotero-plugin-scaffold@0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0):
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@inquirer/prompts': 7.0.0(@types/node@22.7.8)
@@ -7768,7 +7768,7 @@ snapshots:
       update-notifier: 7.3.1
       web-ext: 8.3.0
     optionalDependencies:
-      conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
+      conventional-changelog: 6.0.0
     transitivePeerDependencies:
       - '@types/node'
       - body-parser
