@@ -19,8 +19,8 @@ importers:
         specifier: 9.13.0
         version: 9.13.0
       '@types/node':
-        specifier: 22.7.8
-        version: 22.7.8
+        specifier: 22.8.5
+        version: 22.8.5
       eslint:
         specifier: 9.13.0
         version: 9.13.0(jiti@2.3.3)
@@ -31,8 +31,8 @@ importers:
         specifier: 15.2.10
         version: 15.2.10
       oxlint:
-        specifier: 0.10.2
-        version: 0.10.2
+        specifier: 0.10.3
+        version: 0.10.3
       simple-git-hooks:
         specifier: 2.11.1
         version: 2.11.1
@@ -41,7 +41,7 @@ importers:
         version: 5.6.3
       zotero-plugin-scaffold:
         specifier: 0.1.7
-        version: 0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0))
+        version: 0.1.7(@types/node@22.8.5)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0))
       zotero-types:
         specifier: 3.0.1
         version: 3.0.1
@@ -612,43 +612,43 @@ packages:
     resolution: {integrity: sha512-TUkJLtI163Bz5+JK0O+zDkQpn4gKwN+BovclUvCj6pI/6RXrFqQvUMRS2M+Rt8Rv0qR3wjoMoOPmpJKeOh0nBg==}
     engines: {node: '>= 18'}
 
-  '@oxlint/darwin-arm64@0.10.2':
-    resolution: {integrity: sha512-qFUOPUAu5Z8d/RUYTWKS5rekE5R9M4FyfFn2DbQyH8wg/ufLaYKpquzFKeFPvwNs0NU9B7Iro28Ty+YQCdhuxA==}
+  '@oxlint/darwin-arm64@0.10.3':
+    resolution: {integrity: sha512-1zcWSqr9DmhbSrV1SEZRywp81CNq8ZidIcFGB8tGUMnlBNYiHnxyHHh2GIZsr1C2exmkBUGXruM1P8eQ9BWGuQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint/darwin-x64@0.10.2':
-    resolution: {integrity: sha512-v4VzIwCrB4jCkejnj9bjP0o+CjxMF1j6GltQQQQry2ySDFTNV9Etu6mvi6990mhh+bND4f9VyJ/KbRl+RZBPJA==}
+  '@oxlint/darwin-x64@0.10.3':
+    resolution: {integrity: sha512-lPAXCwYb+wZgjWAMhtPjGn7n1h8HvTulj6XCRyIgUu/aTGDRtnsae9IPXsJ9LJwYu5wyzkcWow0nhlIxkDaZ+w==}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint/linux-arm64-gnu@0.10.2':
-    resolution: {integrity: sha512-7ACUw/H3a9EntQ1fK9K0V3Sqk9y2dD0lvNVo9iWtWL76OAJ2RlGuMTNROBMd/5mac79/zXJu4mlzd3cUeDa9mA==}
+  '@oxlint/linux-arm64-gnu@0.10.3':
+    resolution: {integrity: sha512-OmzpNVRwhjuI/RtoG4ROrwxRICTLoBB3ua4/Mh2iC3RelOog2xhlAAJHenKtzgQXNmebWof/0EckFpMfID7fMw==}
     cpu: [arm64]
     os: [linux]
 
-  '@oxlint/linux-arm64-musl@0.10.2':
-    resolution: {integrity: sha512-FmTXpCFIIIxu516bRHbFb3FNKgwj2zIUeSx4Onklnlea9GgZt/QC9DS5hT06psAkjcWrvGV/LxFWs62qzO8xkA==}
+  '@oxlint/linux-arm64-musl@0.10.3':
+    resolution: {integrity: sha512-QQzlIW6rKOoGZK19gz/kbAbIFROJEV6ER0smcoBA7FzwsQ/ji796qx3TdITelgJwJt5x+OG5ZHztIjyzC871ZQ==}
     cpu: [arm64]
     os: [linux]
 
-  '@oxlint/linux-x64-gnu@0.10.2':
-    resolution: {integrity: sha512-NAJYpgivYM7EGqSTekjt6yeuVmqp8KSgaEcAdhRlEryYfoG67I1S39L62lpVwVzleNPMu9CUyBrlz5r+g2SSig==}
+  '@oxlint/linux-x64-gnu@0.10.3':
+    resolution: {integrity: sha512-m4ZUKsQNXxXmHUYBEaO7KN83DPVsLTq8KaRO4qj0Cs1RgD8O3YYCCDewVe8x/9yskQrCCTP4mL0G4IZgDJ3Gpg==}
     cpu: [x64]
     os: [linux]
 
-  '@oxlint/linux-x64-musl@0.10.2':
-    resolution: {integrity: sha512-e4N0m8pz+CeL2tA0jh4pGk3BdMJbVgIEPlbOjQGk8daY10dVCzA1yWdkkzVh1d3aAOHo3c9mOXYq0ZQjyZfn1g==}
+  '@oxlint/linux-x64-musl@0.10.3':
+    resolution: {integrity: sha512-XKvAUYxE9bHjvWE4wmOlIdaVQN7pzZAH3Rx1EFg0MfGBVjyDm+uf0P3so+gx2PowqvBnBneL9tth2AS3Bcjl6g==}
     cpu: [x64]
     os: [linux]
 
-  '@oxlint/win32-arm64@0.10.2':
-    resolution: {integrity: sha512-LusTVOzTjztkEdXjQM8NqazyXE95yknpRl9DUJA8Ak6UXifEXxw9DbUNzrwaVfp/pkk0KAMab76JkPgwfmyavA==}
+  '@oxlint/win32-arm64@0.10.3':
+    resolution: {integrity: sha512-8xhYVvnwrveMHyXAgQAaDjJWFij4mZP6jtMlBIjk6pZSrjUzX+9o7Wh1zgH6kYApmcPDAzomYJLSYvyF5PzluA==}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint/win32-x64@0.10.2':
-    resolution: {integrity: sha512-/f4heyBoG433OT3siQapyQ9LxIsZGHIQOtO/oWSzl9SAHOQ3MLA+8XOozatT+GWyUB9Y6q4RwJuNbxpdzjOkuA==}
+  '@oxlint/win32-x64@0.10.3':
+    resolution: {integrity: sha512-dQiHruLd42aock1WHp5BFvRvaz+Pe436dQkcmlCVmInhmOjRpDEVKPUUWamrImV6S8VM63bn4Jp60vpprjJQdQ==}
     cpu: [x64]
     os: [win32]
 
@@ -710,8 +710,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@22.7.8':
-    resolution: {integrity: sha512-a922jJy31vqR5sk+kAdIENJjHblqcZ4RmERviFsER4WJcEONqxKcjNOlk0q7OUfrF5sddT+vng070cdfMlrPLg==}
+  '@types/node@22.8.5':
+    resolution: {integrity: sha512-5iYk6AMPtsMbkZqCO1UGF9W5L38twq11S2pYWkybGHH2ogPUvXWNlQqJBzuEZWKj/WRH+QTeiv6ySWqJtvIEgA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -849,6 +849,7 @@ packages:
   '@xmldom/xmldom@0.7.13':
     resolution: {integrity: sha512-lm2GW5PkosIzccsaZIz7tp8cPADSIlIHWDFTR1N0SzfinhhYgeIQjFMz4rYzanCScr3DqQLeomUDArp6MWKm+g==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version is no longer supported, please update to at least 0.8.*
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -2739,8 +2740,8 @@ packages:
     resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
     engines: {node: '>=0.10.0'}
 
-  oxlint@0.10.2:
-    resolution: {integrity: sha512-/8AU6/4e5UwcF0UMM4U3azFJ04unWZMR6Q+o6efXZaLz7uk0+3FO+JU8zX8XbMOaLDQs/FnQMhlPGvsH1CUiyA==}
+  oxlint@0.10.3:
+    resolution: {integrity: sha512-af5u5+s4adyszujeILPDRGwix0o5M1+qR1eqxNSmJhTKVRX7xdrT9s2rpNpMYxQmPyWRhC/+5Gqyb+f/PtbK9A==}
     engines: {node: '>=14.*'}
     hasBin: true
 
@@ -3974,27 +3975,27 @@ snapshots:
   '@hutson/parse-repository-url@5.0.0':
     optional: true
 
-  '@inquirer/checkbox@4.0.0(@types/node@22.7.8)':
+  '@inquirer/checkbox@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
       '@inquirer/figures': 1.0.7
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       ansi-escapes: 4.3.2
       yoctocolors-cjs: 2.1.2
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/confirm@5.0.0(@types/node@22.7.8)':
+  '@inquirer/confirm@5.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/core@10.0.0(@types/node@22.7.8)':
+  '@inquirer/core@10.0.0(@types/node@22.8.5)':
     dependencies:
       '@inquirer/figures': 1.0.7
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       mute-stream: 2.0.0
@@ -4005,91 +4006,91 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/editor@4.0.0(@types/node@22.7.8)':
+  '@inquirer/editor@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       external-editor: 3.1.0
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/expand@4.0.0(@types/node@22.7.8)':
+  '@inquirer/expand@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       yoctocolors-cjs: 2.1.2
     transitivePeerDependencies:
       - '@types/node'
 
   '@inquirer/figures@1.0.7': {}
 
-  '@inquirer/input@4.0.0(@types/node@22.7.8)':
+  '@inquirer/input@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/number@3.0.0(@types/node@22.7.8)':
+  '@inquirer/number@3.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/password@4.0.0(@types/node@22.7.8)':
+  '@inquirer/password@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       ansi-escapes: 4.3.2
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/prompts@7.0.0(@types/node@22.7.8)':
+  '@inquirer/prompts@7.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/checkbox': 4.0.0(@types/node@22.7.8)
-      '@inquirer/confirm': 5.0.0(@types/node@22.7.8)
-      '@inquirer/editor': 4.0.0(@types/node@22.7.8)
-      '@inquirer/expand': 4.0.0(@types/node@22.7.8)
-      '@inquirer/input': 4.0.0(@types/node@22.7.8)
-      '@inquirer/number': 3.0.0(@types/node@22.7.8)
-      '@inquirer/password': 4.0.0(@types/node@22.7.8)
-      '@inquirer/rawlist': 4.0.0(@types/node@22.7.8)
-      '@inquirer/search': 3.0.0(@types/node@22.7.8)
-      '@inquirer/select': 4.0.0(@types/node@22.7.8)
+      '@inquirer/checkbox': 4.0.0(@types/node@22.8.5)
+      '@inquirer/confirm': 5.0.0(@types/node@22.8.5)
+      '@inquirer/editor': 4.0.0(@types/node@22.8.5)
+      '@inquirer/expand': 4.0.0(@types/node@22.8.5)
+      '@inquirer/input': 4.0.0(@types/node@22.8.5)
+      '@inquirer/number': 3.0.0(@types/node@22.8.5)
+      '@inquirer/password': 4.0.0(@types/node@22.8.5)
+      '@inquirer/rawlist': 4.0.0(@types/node@22.8.5)
+      '@inquirer/search': 3.0.0(@types/node@22.8.5)
+      '@inquirer/select': 4.0.0(@types/node@22.8.5)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/rawlist@4.0.0(@types/node@22.7.8)':
+  '@inquirer/rawlist@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       yoctocolors-cjs: 2.1.2
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/search@3.0.0(@types/node@22.7.8)':
+  '@inquirer/search@3.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
       '@inquirer/figures': 1.0.7
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       yoctocolors-cjs: 2.1.2
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/select@4.0.0(@types/node@22.7.8)':
+  '@inquirer/select@4.0.0(@types/node@22.8.5)':
     dependencies:
-      '@inquirer/core': 10.0.0(@types/node@22.7.8)
+      '@inquirer/core': 10.0.0(@types/node@22.8.5)
       '@inquirer/figures': 1.0.7
-      '@inquirer/type': 3.0.0(@types/node@22.7.8)
+      '@inquirer/type': 3.0.0(@types/node@22.8.5)
       ansi-escapes: 4.3.2
       yoctocolors-cjs: 2.1.2
     transitivePeerDependencies:
       - '@types/node'
 
-  '@inquirer/type@3.0.0(@types/node@22.7.8)':
+  '@inquirer/type@3.0.0(@types/node@22.8.5)':
     dependencies:
-      '@types/node': 22.7.8
+      '@types/node': 22.8.5
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -4285,28 +4286,28 @@ snapshots:
       '@octokit/request-error': 6.1.4
       '@octokit/webhooks-methods': 5.1.0
 
-  '@oxlint/darwin-arm64@0.10.2':
+  '@oxlint/darwin-arm64@0.10.3':
     optional: true
 
-  '@oxlint/darwin-x64@0.10.2':
+  '@oxlint/darwin-x64@0.10.3':
     optional: true
 
-  '@oxlint/linux-arm64-gnu@0.10.2':
+  '@oxlint/linux-arm64-gnu@0.10.3':
     optional: true
 
-  '@oxlint/linux-arm64-musl@0.10.2':
+  '@oxlint/linux-arm64-musl@0.10.3':
     optional: true
 
-  '@oxlint/linux-x64-gnu@0.10.2':
+  '@oxlint/linux-x64-gnu@0.10.3':
     optional: true
 
-  '@oxlint/linux-x64-musl@0.10.2':
+  '@oxlint/linux-x64-musl@0.10.3':
     optional: true
 
-  '@oxlint/win32-arm64@0.10.2':
+  '@oxlint/win32-arm64@0.10.3':
     optional: true
 
-  '@oxlint/win32-x64@0.10.2':
+  '@oxlint/win32-x64@0.10.3':
     optional: true
 
   '@pkgjs/parseargs@0.11.0':
@@ -4364,7 +4365,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@22.7.8':
+  '@types/node@22.8.5':
     dependencies:
       undici-types: 6.19.8
 
@@ -4384,7 +4385,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.7.8
+      '@types/node': 22.8.5
 
   '@typescript-eslint/eslint-plugin@8.11.0(@typescript-eslint/parser@8.11.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3)':
     dependencies:
@@ -4888,7 +4889,7 @@ snapshots:
 
   chrome-launcher@1.1.2:
     dependencies:
-      '@types/node': 22.7.8
+      '@types/node': 22.8.5
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 2.0.1
@@ -6841,16 +6842,16 @@ snapshots:
 
   os-tmpdir@1.0.2: {}
 
-  oxlint@0.10.2:
+  oxlint@0.10.3:
     optionalDependencies:
-      '@oxlint/darwin-arm64': 0.10.2
-      '@oxlint/darwin-x64': 0.10.2
-      '@oxlint/linux-arm64-gnu': 0.10.2
-      '@oxlint/linux-arm64-musl': 0.10.2
-      '@oxlint/linux-x64-gnu': 0.10.2
-      '@oxlint/linux-x64-musl': 0.10.2
-      '@oxlint/win32-arm64': 0.10.2
-      '@oxlint/win32-x64': 0.10.2
+      '@oxlint/darwin-arm64': 0.10.3
+      '@oxlint/darwin-x64': 0.10.3
+      '@oxlint/linux-arm64-gnu': 0.10.3
+      '@oxlint/linux-arm64-musl': 0.10.3
+      '@oxlint/linux-x64-gnu': 0.10.3
+      '@oxlint/linux-x64-musl': 0.10.3
+      '@oxlint/win32-arm64': 0.10.3
+      '@oxlint/win32-x64': 0.10.3
 
   p-defer@1.0.0: {}
 
@@ -7747,10 +7748,10 @@ snapshots:
       async: 3.2.6
       jszip: 3.10.1
 
-  zotero-plugin-scaffold@0.1.7(@types/node@22.7.8)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0)):
+  zotero-plugin-scaffold@0.1.7(@types/node@22.8.5)(conventional-changelog@6.0.0(conventional-commits-filter@5.0.0)):
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
-      '@inquirer/prompts': 7.0.0(@types/node@22.7.8)
+      '@inquirer/prompts': 7.0.0(@types/node@22.8.5)
       bumpp: 9.7.1
       c12: 2.0.1
       chalk: 5.3.0
