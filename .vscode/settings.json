@@ -1,6 +1,5 @@
 {
   "editor.formatOnType": false,
-  "i18next.i18nPaths": "d:/Desktop/Projects/zotero-plugin-template/addon/locale",
   "files.autoSave": "onFocusChange",
   "testing.automaticallyOpenPeekView": "never",
   "references.preferredLocation": "view",
@@ -47,9 +46,9 @@
     "bun.lockb": true,
     "coverage": true,
     "CODE_OF_CONDUCT.md": true,
-    ".cspell.json": true,
     ".editorconfig": true,
-    ".gitignore": true
+    ".gitignore": true,
+    ".direnv": true
   },
   "explorerExclude.backup": {},
   "errorLens.excludeBySource": [

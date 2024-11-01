@@ -1,7 +1,4 @@
-import ZoteroToolkit from 'zotero-plugin-toolkit'
-import { BasicTool, unregister } from 'zotero-plugin-toolkit/dist/basic'
-
-import { UITool } from 'zotero-plugin-toolkit/dist/tools/ui'
+import { BasicTool, UITool, unregister, ZoteroToolkit } from 'zotero-plugin-toolkit'
 import { config } from '../../package.json'
 
 function createZToolkit() {

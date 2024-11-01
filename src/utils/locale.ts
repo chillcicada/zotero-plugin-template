@@ -17,8 +17,6 @@ function initLocale() {
 /**
  * Get locale string, see https://firefox-source-docs.mozilla.org/l10n/fluent/tutorial.html#fluent-translation-list-ftl
  * @param localString ftl key
- * @param options.branch branch name
- * @param options.args args
  * @example
  * ```ftl
  * # addon.ftl
