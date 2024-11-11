@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       zotero-plugin-toolkit:
-        specifier: 4.0.7
-        version: 4.0.7
+        specifier: 4.0.9
+        version: 4.0.9
     devDependencies:
       '@antfu/eslint-config':
         specifier: 3.8.0
@@ -3642,8 +3642,8 @@ packages:
       conventional-changelog:
         optional: true
 
-  zotero-plugin-toolkit@4.0.7:
-    resolution: {integrity: sha512-9bAXXJTgH5SkyauGft50EerudZYGYzN/T3kPgi7udB8lScVyO+HkYERxJqnFuvk2gHzV+stqeaKaX9a0ODTxEQ==}
+  zotero-plugin-toolkit@4.0.9:
+    resolution: {integrity: sha512-DLFB17D4hWAZRLBKHfipZke765StKBlZ1S320cQqducHaEW7dWC1tumBjB8n02DtuVGn6l9YKo4819wbyVMKcQ==}
     engines: {node: '>=18'}
 
   zotero-types@2.2.1:
@@ -7732,7 +7732,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  zotero-plugin-toolkit@4.0.7:
+  zotero-plugin-toolkit@4.0.9:
     dependencies:
       zotero-types: 2.2.1
     transitivePeerDependencies:
