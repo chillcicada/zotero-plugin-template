@@ -37,7 +37,7 @@
     "@types/node": "22.10.1",
     "eslint": "9.16.0",
     "eslint-plugin-format": "0.1.3",
-    "lint-staged": "15.2.10",
+    "lint-staged": "15.2.11",
     "oxlint": "0.14.0",
     "simple-git-hooks": "2.11.1",
     "typescript": "5.7.2",
