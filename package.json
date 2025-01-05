@@ -30,19 +30,19 @@
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {
-    "zotero-plugin-toolkit": "4.0.11"
+    "zotero-plugin-toolkit": "4.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.12.0",
-    "@types/node": "22.10.2",
+    "@antfu/eslint-config": "3.12.1",
+    "@types/node": "22.10.5",
     "eslint": "9.17.0",
     "eslint-plugin-format": "0.1.3",
-    "lint-staged": "15.2.11",
-    "oxlint": "0.15.2",
+    "lint-staged": "15.3.0",
+    "oxlint": "0.15.5",
     "simple-git-hooks": "2.11.1",
     "typescript": "5.7.2",
     "zotero-plugin-scaffold": "0.1.7",
-    "zotero-types": "3.0.3"
+    "zotero-types": "3.1.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
