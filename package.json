@@ -33,15 +33,15 @@
     "zotero-plugin-toolkit": "4.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.11.0",
-    "@types/node": "22.13.14",
-    "eslint": "9.23.0",
+    "@antfu/eslint-config": "4.12.0",
+    "@types/node": "22.15.0",
+    "eslint": "9.25.1",
     "eslint-plugin-format": "1.0.1",
-    "lint-staged": "15.5.0",
-    "oxlint": "0.16.3",
-    "simple-git-hooks": "2.12.1",
-    "typescript": "5.8.2",
-    "zotero-plugin-scaffold": "0.4.1",
+    "lint-staged": "15.5.1",
+    "oxlint": "0.16.7",
+    "simple-git-hooks": "2.13.0",
+    "typescript": "5.8.3",
+    "zotero-plugin-scaffold": "0.5.0",
     "zotero-types": "3.1.9"
   },
   "simple-git-hooks": {
