@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       zotero-plugin-toolkit:
-        specifier: 4.1.2
-        version: 4.1.2(zotero-types@3.1.9(@types/bluebird@3.5.42)(@types/react@18.3.1)(epubjs@0.3.93)(pdfjs-dist@4.8.69))
+        specifier: 5.0.1
+        version: 5.0.1(zotero-types@3.1.9(@types/bluebird@3.5.42)(@types/react@18.3.1)(epubjs@0.3.93)(pdfjs-dist@4.8.69))
     devDependencies:
       '@antfu/eslint-config':
         specifier: 4.12.0
@@ -657,6 +657,7 @@ packages:
   '@swc/core@1.11.22':
     resolution: {integrity: sha512-mjPYbqq8XjwqSE0hEPT9CzaJDyxql97LgK4iyvYlwVSQhdN1uK0DBG4eP9PxYzCS2MUGAXB34WFLegdUj5HGpg==}
     engines: {node: '>=10'}
+    deprecated: It has a bug. See https://github.com/swc-project/swc/issues/10413
     peerDependencies:
       '@swc/helpers': '>=0.5.17'
     peerDependenciesMeta:
@@ -2642,11 +2643,11 @@ packages:
       conventional-changelog:
         optional: true
 
-  zotero-plugin-toolkit@4.1.2:
-    resolution: {integrity: sha512-zM2NR6BLQKIAPa6Q0u6xdyIqjfwe9fz5lbJvg+fXN7B3m20ymC7wFyn1CJVzMCNCJitzr3K+obkyCvMYhiVDFQ==}
+  zotero-plugin-toolkit@5.0.1:
+    resolution: {integrity: sha512-HsZN8vxvL4/NhxE5wRVdkx7GyGghyzMsWUrDj9q8XGa0gtTxMO9Tjc3bsrmy1u3qL8X5TQu1apkHXhWHN+uNfg==}
     engines: {node: '>=18'}
     peerDependencies:
-      zotero-types: ^3.1.0
+      zotero-types: '>=4.0.0'
 
   zotero-types@3.1.9:
     resolution: {integrity: sha512-Sdzv72yOYqOndf1TfFxw8h63Q4xFOycHm3PGBawvOzisZt23REg+kOgMVpHLST0d8nqhcObstC2dpxfGW81k4g==}
@@ -5577,7 +5578,7 @@ snapshots:
       - '@swc/helpers'
       - magicast
 
-  zotero-plugin-toolkit@4.1.2(zotero-types@3.1.9(@types/bluebird@3.5.42)(@types/react@18.3.1)(epubjs@0.3.93)(pdfjs-dist@4.8.69)):
+  zotero-plugin-toolkit@5.0.1(zotero-types@3.1.9(@types/bluebird@3.5.42)(@types/react@18.3.1)(epubjs@0.3.93)(pdfjs-dist@4.8.69)):
     dependencies:
       zotero-types: 3.1.9(@types/bluebird@3.5.42)(@types/react@18.3.1)(epubjs@0.3.93)(pdfjs-dist@4.8.69)
 
